@@ -1,0 +1,26 @@
+﻿<Window x:Class="PROG_FINAL_POE.Edit_Recipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG_FINAL_POE"
+        mc:Ignorable="d"
+        Title="Edit_Recipe" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/istockphoto-1382418346-612x612.jpg"/>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock Text="Edit Recipe!" Foreground="White" FontSize="50" Margin="0,0,0,20"/>
+            <!-- Replace with your actual recipe editing controls (TextBoxes, etc.) -->
+            <TextBox x:Name="txtRecipeName" Text="Recipe Name" FontSize="24" Width="600" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtIngredients" Text="Ingredients" FontSize="24" Width="600" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtInstructions" Text="Instructions" FontSize="24" Width="600" Height="0,0,0,0"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left" Orientation="Horizontal" Margin="20,0,0,20">
+            <Button Content="Save" Width="150" Height="50" FontSize="24" Foreground="White" Background="Transparent" Click="SaveButton_Click" Margin="0,0,20,0"/>
+            <Button Content="Exit" Width="150" Height="50" FontSize="24" Foreground="White" Background="Transparent" Click="ExitButton_Click"/>
+            <Button Content="Back" Width="150" Height="50" FontSize="24" Foreground="White" Background="Transparent" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

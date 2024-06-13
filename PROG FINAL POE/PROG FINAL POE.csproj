@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>PROG_FINAL_POE</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="702214a6517782ecebe7a74eade96d7f.jpg" />
+    <None Remove="ba191850256e1efd840fba1c8d2efd2c.jpg" />
+    <None Remove="istockphoto-1382418346-612x612.jpg" />
+    <None Remove="manki-kim-L82-kkEBOd0-unsplash %282%29.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="702214a6517782ecebe7a74eade96d7f.jpg" />
+    <Resource Include="ba191850256e1efd840fba1c8d2efd2c.jpg" />
+    <Resource Include="istockphoto-1382418346-612x612.jpg" />
+    <Resource Include="manki-kim-L82-kkEBOd0-unsplash (2).jpg" />
+  </ItemGroup>
+
+</Project>

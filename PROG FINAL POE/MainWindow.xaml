@@ -1,0 +1,29 @@
+﻿<Window x:Class="PROG_FINAL_POE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG_FINAL_POE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\RC_Student_lab\source\repos\WpfApp1\WpfApp1\images\f4b468c720a97521602be6095de1abec.jpg"/>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <TextBlock Text="Welcome To Caffeine Canvas" FontSize="55" Foreground="White" FontWeight="Bold" />
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,90,0,0">
+            <Button Content="Add" Width="290" Height="70" BorderBrush="white" BorderThickness="3" FontSize="50" Foreground="white" Background="Transparent"
+                    Tag="Add_Recipe" Click="Button_Click" />
+            <Button Content="View" Width="290" Height="70" BorderBrush="white" BorderThickness="3" FontSize="50" Foreground="white" Background="Transparent"
+                    Tag="View_Recipe" Click="Button_Click"/>
+            <Button Content="Edit" Width="290" Height="70" BorderBrush="white" BorderThickness="3" FontSize="50" Foreground="white" Background="Transparent"
+                    Tag="Edit_Recipe" Click="Button_Click"/>
+            <Button Content="Delete" Width="290" Height="70" BorderBrush="white" BorderThickness="3" FontSize="50" Foreground="white" Background="Transparent"
+        Tag="Delete_Recipe" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
